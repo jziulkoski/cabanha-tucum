@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D1D0A9;
+}
+
+header {
+    text-align: center;
+}
+
+#logo-tucum {
+    max-width: 25%;
+    padding: 2%;
+}
+
+#navegacao {
+    background-color: #60892C;
+    padding: 3%;
+}
+
+#navegacao ul {
+    max-width: 100%;
+}
+
+#navegacao li {
+    display: inline;
+    text-align: center;
+
+    color: black;
+    text-decoration: none;
+    
+    font-family: "Italiana", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    
+    margin: 2%;
+}
+
+#navegacao a {
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+#navegacao a:hover {
+    color: #D1D0A9;
+    text-decoration: overline;
+
+    transition: 0.2s;
+}
+
+header div {
+    background: url(./assets/IMG_3079.jpg) center/cover fixed;
+    background-position: 20%;
+    max-width: 100%;
+    height: auto;
+    padding: 11%;
+
+    text-align: center
+}
+
+header div h1 {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    color: #D1D0A9;
+
+    background-color: #60892C;
+    border-radius: 10px;
+
+    padding: 1%;
+}
+
+header p {
+    font-size: 24px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    
+    margin: 3% 10%;
+}
+
+.titulo-section {
+    font-size: 26px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    font-weight: 600;
+    color: black;
+    border-bottom: 3px solid black;
+
+    margin: 1% 8%;
+}
+
+.texto-section {
+    font-size: 20px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    font-weight: 500;
+    color: black;
+
+    margin: 2% 10%;
+}
+
+.btn-voltar-topo {
+    margin: 0.5% 10% 2% 10%;
+    padding: 0.5%;
+
+    background-color: #60892C;
+    
+    border: 1px solid #D1D0A9;
+    border-radius: 15px;
+
+    transition: 0.2s;
+}
+
+.btn-voltar-topo a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #D1D0A9;
+    font-family: "Ibarra Real Nova", sans-serif;
+    font-weight: 600;
+}
+
+.btn-voltar-topo:hover {
+    opacity: 0.5;
+}
+
+.animais-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin: 2% 8%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.animais-individual {
+    flex: 100%;
+    max-width: 30%;
+
+    transition: 0.2s;
+}
+
+.animais-individual:hover {
+    transform: scale(110%);
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.animais-individual .foto-animais {
+    width: 100%;
+    height: auto;
+}
+
+.animais-individual h3 {
+    background-color: #60892C;
+    font-size: 18px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+    text-decoration: overline;
+    transition: 0.2s;
+}
+
+.animais-individual h3:hover {
+    color: #D1D0A9;
+}
+
+.animais-individual .informacao-animais {    
+    font-size: 16px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+    background-color: #60892C;
+}
+
+#contato .informacoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    margin: 3% 10%;
+}
+
+#contato .informacoes p {
+    font-family: "Ibarra Real Nova", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+
+    margin: 5px 0;
+}
+
+#contato .informacoes img {
+    width: 25%;
+    border-radius: 50%;
+
+    margin-bottom: 2%;
+}
+
+footer {
+    background: url(./assets/IMG_2615.JPG) center/cover fixed;
+    background-position: 20%;
+
+    max-width: 100%;
+    height: auto;
+    padding: 5%;
+
+    text-align: center;
+}
+
+footer div {
+    display: inline-block;
+
+    background-color: #60892C;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+footer div p, a {
+    text-align: center;
+
+    font-family: "Ibarra Real Nova";
+    font-size: 16px;
+    color: white;
+}
+
+footer div img {
+    width: 150px;
+}
+
+@media screen and (max-width: 800px) {
+    .animais-individual {
+    flex: 70%;
+    max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #navegacao a {
+        font-size: 20px;
+    }
+
+    header div {
+        padding: 20%;
+    }
+    header div h1 {
+        font-size: 20px;     
+    }
+    
+    header p {
+        font-size: 20px;
+    }
+
+    .texto-section {
+        font-size: 18px;
+    }
+
+    .titulo-section {
+        font-size: 22px;
+    }
+
+   .animais-individual {
+    flex: 100%;
+    max-width: 100%;
+    }
+
+    #contato .informacoes {
+        flex-direction: column;
+        gap: 2%;
+        align-items: center;
+    }
+
+    #contato .informacoes img {
+        width: 35%;
+    }
+
+    #contato .informacoes h2 > p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
