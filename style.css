@@ -4,6 +4,11 @@
     box-sizing: border-box;
   }
 
+body, html {
+    position: relative;
+    width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,36 +26,34 @@ header {
     padding: 2%;
 }
 
-#navegacao {
+.navegacao {
     background-color: #60892C;
     padding: 3%;
 }
 
-#navegacao ul {
+.navegacao ul {
     max-width: 100%;
 }
 
-#navegacao li {
+.navegacao li {
     display: inline;
     text-align: center;
 
     color: black;
     text-decoration: none;
     
-    font-family: "Italiana", sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    
     margin: 2%;
 }
 
-#navegacao a {
+.navegacao a {
     color: black;
     text-decoration: none;
-    font-size: 32px;
+    font-family: "Ibarra Real Nova", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
 }
 
-#navegacao a:hover {
+.navegacao a:hover {
     color: #D1D0A9;
     text-decoration: overline;
 
@@ -109,28 +112,26 @@ header p {
     margin: 2% 10%;
 }
 
-.btn-voltar-topo {
-    margin: 0.5% 10% 2% 10%;
-    padding: 0.5%;
+.btn-voltar-topo img {
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    height: 60px;
+    width: 60px;
 
     background-color: #60892C;
-    
-    border: 1px solid #D1D0A9;
-    border-radius: 15px;
+    border: none;
+    border-radius: 25%;
+    font-size: 1px;
+    justify-content: center;
+
+    padding: 3px;
 
     transition: 0.2s;
 }
 
-.btn-voltar-topo a {
-    font-size: 16px;
-    text-decoration: none;
-    color: #D1D0A9;
-    font-family: "Ibarra Real Nova", sans-serif;
-    font-weight: 600;
-}
-
 .btn-voltar-topo:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .animais-grid {
@@ -140,20 +141,12 @@ header p {
 
     margin: 2% 8%;
 
-    align-items: center;
     justify-content: center;
 }
 
 .animais-individual {
     flex: 100%;
     max-width: 30%;
-
-    transition: 0.2s;
-}
-
-.animais-individual:hover {
-    transform: scale(110%);
-    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
 .animais-individual .foto-animais {
@@ -231,7 +224,7 @@ footer div {
 footer div p, a {
     text-align: center;
 
-    font-family: "Ibarra Real Nova";
+    font-family: "Ibarra Real Nova", sans-serif;
     font-size: 16px;
     color: white;
 }
@@ -245,11 +238,15 @@ footer div img {
     flex: 70%;
     max-width: 70%;
     }
+
+    .navegacao a {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
     #navegacao a {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     header div {
@@ -289,5 +286,11 @@ footer div img {
     #contato .informacoes h2 > p {
         font-size: 18px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navegacao a {
+        font-size: 12px;
     }
 }
